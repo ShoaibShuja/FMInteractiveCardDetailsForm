@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+
+  <div class="main__container">
+
+    <div class="colorful__card">
+      <img src="./images/card-logo.svg" alt="logo">
+      <h3 class="card__number">0000 0000 0000 0000</h3>
+      <div class="card__profile">
+        <p>JANE APPLESEED</p>
+        <p>00/00</p>
+      </div>
+    </div>
+
+    <div class="simple__card"></div>
+
+    <div class="card__left">
+
+    </div>
+
+    <div class="card__right">
+      <div class="form">
+
+        <div id="success__message">
+          <img src="./images/icon-complete.svg" alt="Complete" />
+          <h3>THANK YOU!</h3>
+          <p>We've added your card details</p>
+        </div>
+
+        <div class="input__box" id="name__box">
+          <p class="input__title">CARDHOLDER NAME</p>
+          <input class="input__design" type="text" id="name" placeholder="e.g. Jane Appleseed" />
+          <p class="error__text" id="name__error">Can't be blank</p>
+        </div>
+        <div class="input__box" id="number__box">
+          <p class="input__title">CARDHOLDER NUMBER</p>
+          <input class="input__design" type="text" placeholder="e.g. 1234 5678 9123 0000" id="number" />
+          <p class="error__text" id="number__error">Can't be blank</p>
+        </div>
+        <div class="input__card" id="card__box">
+          <div class="input__exp">
+            <p class="input__title">EXP. DATE (MM/YY)</p>
+            <div class="input__exp-input">
+              <input class="input__design" type="number" id="month" placeholder="MM" />
+              <input class="input__design" type="number" id="year" placeholder="YY" />
+            </div>
+            <p class="error__text" id="date">Can't be blank</p>
+          </div>
+          <div class="input__cvc">
+            <p class="input__title">CVC</p>
+            <input class="input__design" type="number" placeholder="e.g. 123" />
+            <p class="error__text">Can't be blank</p>
+          </div>
+        </div>
+        <button class="submit__btn" id="submit__btn">Confirm</button>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    <br /> 
+    Coded by <a href="https://www.frontendmentor.io/profile/ShoaibShuja">Shoaib Shuja</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
